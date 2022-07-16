@@ -1,0 +1,20 @@
+Скрипт запускается по CRON
+
+# Примеры запуска crontab
+
+crontab -e 
+
+    # запуск каждую минуту
+* * * * * /root/backup_cron/backup.sh
+    # запуск каждый час
+0 * * * * /root/backup_cron/backup.sh
+    # запуск каждый день в 23:59
+59 23 * * * /root/backup_cron/backup.sh
+
+Запуск с помощью run-parts:
+/etc/cron.minutely 	- каждую минуту
+/etc/cron.hourly 	- каждый час
+/etc/cron.daily 	- каждый день
+/etc/cron.weekly 	- каждую неделю
+/etc/cron.monthly 	- каждый месяц
+Имя скрипта не должно содержать точек.
