@@ -14,5 +14,5 @@ ssh root@89.208.228.219 "cd /root/backup_cron; find . -cmin +5 -exec rm -f {} \;
         # delete the created .log files
 rm -rf *.log
 
-# 	cron -e
+# 	crontab -e
 #	* * * * * /root/backup_cron/test_1min.sh
