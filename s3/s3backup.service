@@ -1,0 +1,9 @@
+[Unit]
+Description=Test backup to s3 storage
+
+[Service]
+Type=oneshot
+ExecStart=/root/backup_s3/backup.sh
+
+[Install]
+WantedBy=multi-user.target

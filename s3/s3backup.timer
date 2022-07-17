@@ -1,0 +1,8 @@
+[Unit]
+Description=Storage s3 test backup timer
+
+[Timer]
+OnCalendar=daily
+
+[Install]
+WantedBy=timers.target

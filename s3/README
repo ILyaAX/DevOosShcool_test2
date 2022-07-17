@@ -1,0 +1,16 @@
+Установить и настроить s3cmd (https://docs.digitalocean.com/products/spaces/resources/s3cmd/)
+
+apt install s3cmd
+s3cmd --configure
+
+Установка и настройка systemd services 
+(https://interface31.ru/tech_it/2021/04/nastraivaem-taymery-systemd-vmesto-zadaniy-cron.html
+https://habr.com/ru/company/ruvds/blog/512868/)
+
+Файлы s3backup.service, s3backup.timer поместить в /etc/systemd/system
+
+Управлять сервисом:
+systemctl enable s3backup.timer
+systemctl disable s3backup.timer
+systemctl start s3backup.timer
+systemctl stop s3backup.timer
